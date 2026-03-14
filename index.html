@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO essentials -->
+    <title>My Developer Portfolio</title>
+    <meta name="description" content="Portfolio showcasing my projects, skills, and experience as a developer.">
+
+    <!-- Stylesheet -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Script -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+            I’m a developer passionate about building clean, accessible, and user‑friendly web experiences.
+            I enjoy working with modern web technologies and continuously improving my craft.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+            <figure>
+                <img src="project1.png" alt="Screenshot of Project 1 interface">
+                <figcaption>Project 1 — A web app for managing tasks efficiently.</figcaption>
+            </figure>
+            <p>
+                This project demonstrates my ability to build responsive interfaces and implement CRUD functionality.
+            </p>
+        </article>
+
+        <article>
+            <figure>
+                <img src="project2.png" alt="Screenshot of Project 2 dashboard">
+                <figcaption>Project 2 — A dashboard visualizing real‑time data.</figcaption>
+            </figure>
+            <p>
+                I focused on data visualization, accessibility, and performance optimization.
+            </p>
+        </article>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & Semantic Markup</li>
+            <li>CSS3 & Responsive Design</li>
+            <li>JavaScript / TypeScript</li>
+            <li>React or Vue</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form aria-label="Contact Form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+</body>
+</html>
