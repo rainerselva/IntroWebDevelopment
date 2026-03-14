@@ -1,0 +1,158 @@
+/* ===========================
+   Base Styles
+   =========================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===========================
+   Header & Navigation
+   =========================== */
+
+header {
+    background-color: #222;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* Flexbox with vendor prefixes */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+/* ===========================
+   About Me Section
+   =========================== */
+
+#about-me {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===========================
+   Projects Section
+   =========================== */
+
+#projects {
+    padding: 2rem;
+}
+
+    #projects article {
+        background: white;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    #projects figure img {
+        border-radius: 6px;
+    }
+
+    #projects figure {
+        margin: 0 0 1rem 0;
+    }
+
+/* ===========================
+   Skills Section
+   =========================== */
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+    #skills li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #007acc;
+    }
+
+/* ===========================
+   Contact Form
+   =========================== */
+
+#contact {
+    padding: 2rem;
+}
+
+    #contact form {
+        max-width: 600px;
+        margin: auto;
+        /* Flexbox with vendor prefixes */
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+input,
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #005fa3;
+    }
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #projects article {
+        margin-bottom: 2rem;
+    }
+}
